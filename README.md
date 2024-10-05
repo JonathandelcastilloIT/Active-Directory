@@ -57,14 +57,58 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - name it Client-01.
 - select Windows 10 pro as the image
 - select at least 2 vcpus and 16 GiB memory.
+- Create a username and password for your VM client-1
 - Make sure to select the same resource group and Virtual networkfrom the DC-01 VM
 
 ![image](https://github.com/user-attachments/assets/d592b6eb-f3e6-4410-88da-555c82419bbb)
 
+3. Set the Domain Controller's Private IP to static
+
+*We will change the DC to a static IP because its offering Active Directory services to the client machine (we do not want the private IP address to change so we will put it as static). Client machine will be joined to the domain. we're gonna tell client one to use DC one as the DNS server. And we need to manually configure the DNS settings for client one to use this private IP address. And if this private IP address changes this DNS server, will  no longer be valid.
+
+- Once the VM has been deployed, proceed to the VM overview page and select "Networking" -> network setting  on the left side.
+
+![image](https://github.com/user-attachments/assets/678e0d6a-b2bd-46a8-94ad-bb972353e47f)
+
+
+
+- Select Network Interface Card -> IP configurations -> ipconfig1 and set Private IP address allocation to static.
+
+
+![image](https://github.com/user-attachments/assets/3b93fcde-31d0-444f-81d1-54103b6b5a5e)
+
+
+4.Login to DC-01 using remote desktop (for mac user use windows app)
+
+- Get the public IP address from the VM DC-1 
+- Enter the password and username you created for your VM 
+- Login
+
+![image](https://github.com/user-attachments/assets/8240c4c0-2281-4d35-86ea-f631e2ce9180)
+
+
+5. Once logged in to DC_1 i will enable inbound ICMP traffic to allow for Client-1's ping
+
+- open windows defender firewall and select advanced settings.
+- Sort by protocol and find both ICMPv4 echo requests and enable both these rules by right clicking and selecting enable rule.
+
+
+   ![image](https://github.com/user-attachments/assets/723d74a4-63af-480b-8fe6-49df3656c820)
 
 
 
 
+5. Client one will connect to DC-1 to ensure connectivity
+
+*To ensure connectivity between the two VM's, we will ping the domain controller from the client. At first the ping will not work correctly. We have to enable ICMPv4 on the firewall on DC-1. Now we can ping DC-1 successfully from Client-1
+
+- Login to VM client-1 using remote desktop (for mac user use windows app)
+
+- Find DC-1's private IP address in the Azure Portal and copy it. Proceed to Client-1 and open the terminal and type "ping (DC-01 private ip address)"
+
+- Now we can ping DC-1 successfully from Client-1  
+
+![image](https://github.com/user-attachments/assets/8cd1563d-0faa-40ce-955f-6f953739a0a5)
 
 
 
