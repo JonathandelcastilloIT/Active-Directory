@@ -139,7 +139,7 @@ Configure and install Active Directory services on the designated Domain Control
 
 
 
-6.Set Client-1’s DNS settings to DC-1’s Private IP address
+6. Set Client-1’s DNS settings to DC-1’s Private IP address
 
 
 *In order for the client-1 to join the domain “mydomain.com”.we need to tell the client-1 to use our domain controller as the DNS server
