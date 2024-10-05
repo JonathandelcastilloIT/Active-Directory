@@ -113,6 +113,57 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 
 
+(Step 2 overview) 
+
+Configure and install Active Directory services on the designated Domain Controller virtual machine.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6.Set Client-1’s DNS settings to DC-1’s Private IP address
+
+
+*In order for the client-1 to join the domain “mydomain.com”.we need to tell the client-1 to use our domain controller as the DNS server
+
+- In the Azure Portal, select Client-01 -> Networking setting -> Network interface and click on DNS servers
+
+- Select a custom DNS server and type in the private ip address of DC-01 and save then restart Client-01
+
+![image](https://github.com/user-attachments/assets/8258c825-8030-4c55-85db-9228cceb7ed3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
