@@ -122,10 +122,19 @@ Configure and install Active Directory services on the designated Domain Control
 1. Install Active Directory in DC-01
 
 
-- 
+- In the Server Manager dashboard
+- click Add roles and features
+- continue the setup
+- Select Active Directory Domain Services and finish the installation
+![image](https://github.com/user-attachments/assets/42d65a5e-05d3-441f-91c9-78177aa4dbe2)
 
+2. Promote DC-01 to Domain Controller
 
-
+- click on the flag
+- promote DC-1 to Domain Controller
+- Setup a new forest as mydomain.com
+- Restart and then log back into DC-1 as user: mydomain.com\labuser
+![image](https://github.com/user-attachments/assets/5758ca96-5749-4c68-b22e-f06613ff3c68)
 
 
 
