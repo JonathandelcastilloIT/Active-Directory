@@ -137,9 +137,9 @@ Configure and install Active Directory services on the designated Domain Control
 ![image](https://github.com/user-attachments/assets/5758ca96-5749-4c68-b22e-f06613ff3c68)
 
 
+3. run Active Directory Users & Computers as shown below.
 
-
-
+![image](https://github.com/user-attachments/assets/dbe8e3bd-8036-4c30-ba29-3ae9954ebef0)
 
 
 
