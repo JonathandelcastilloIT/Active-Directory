@@ -141,6 +141,27 @@ Configure and install Active Directory services on the designated Domain Control
 ![image](https://github.com/user-attachments/assets/dbe8e3bd-8036-4c30-ba29-3ae9954ebef0)
 
 
+3. create an Organizational Unit(OU) named _EMPLOYEES and _ADMINS
+
+- Right click on mydomain.com and select new and click on Organizational Unit
+
+![image](https://github.com/user-attachments/assets/e99b4669-08dc-4396-a2ac-67eadfab1757)
+
+- create OU _EMPLOYEES AND _ADMINS
+
+![image](https://github.com/user-attachments/assets/1550f54f-b186-48d0-8b95-222997eb2a9f)
+
+4. Create a Domain Admin user within the domain
+
+-Right click on the OU _ADMINS and create a new -> user named Jane Doe with the username jane_admin
+
+![image](https://github.com/user-attachments/assets/abf82555-2d3b-43df-bb94-2bb0d375942f)
+
+5. Add jane_admin to the “Domain Admins” Security Group
+
+- turn Jane Doe into an admin by right clicking her name-> properties-> member of and adding her to the “Domain Admins” Security Group
+
+![image](https://github.com/user-attachments/assets/16c77d30-25ac-4905-8c36-a6b04b9d41e2)
 
 
 
@@ -152,7 +173,10 @@ Configure and install Active Directory services on the designated Domain Control
 
 
 
-6. Set Client-1’s DNS settings to DC-1’s Private IP address
+
+
+
+5. Set Client-1’s DNS settings to DC-1’s Private IP address
 
 
 *In order for the client-1 to join the domain “mydomain.com”.we need to tell the client-1 to use our domain controller as the DNS server
