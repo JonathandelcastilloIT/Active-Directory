@@ -136,8 +136,7 @@ Configure and install Active Directory services on the designated Domain Control
 - Restart and then log back into DC-1 as user: mydomain.com\labuser
 ![image](https://github.com/user-attachments/assets/5758ca96-5749-4c68-b22e-f06613ff3c68)
 
-
-3. Run Active Directory Users & Computers as shown below.
+-  Run Active Directory Users & Computers as shown below.
 
 ![image](https://github.com/user-attachments/assets/dbe8e3bd-8036-4c30-ba29-3ae9954ebef0)
 
