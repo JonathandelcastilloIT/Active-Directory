@@ -118,6 +118,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 Configure and install Active Directory services on the designated Domain Controller virtual machine.
 
 
+1. Install Active Directory in DC-01
+
+
+- 
 
 
 
@@ -150,9 +154,10 @@ Configure and install Active Directory services on the designated Domain Control
 
 ![image](https://github.com/user-attachments/assets/8258c825-8030-4c55-85db-9228cceb7ed3)
 
+- From Client-1, open PowerShell and run ipconfig /all
+- The output for the DNS settings should show DC-1's private IP Address I
 
-
-
+![image](https://github.com/user-attachments/assets/6a262bb6-d5be-4328-9e50-4d5540ecaa88)
 
 
 
