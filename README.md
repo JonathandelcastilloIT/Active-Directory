@@ -35,7 +35,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 (Step 1 overview) 
 
-- I will configure and interconnect two virtual machines, each assuming distinct roles. The first virtual machine will be designated as the Domain Controller. The second virtual machine will be configured as the Client.
+- setting up Active Directory infrastructure. I will configure and interconnect two virtual machines, each assuming distinct roles. The first virtual machine will be designated as the Domain Controller. The second virtual machine will be configured as the Client.
 
 ![image](https://github.com/user-attachments/assets/e9d78826-d6ae-4a80-98f2-19b1f67bfe15)
 
@@ -111,6 +111,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 ![image](https://github.com/user-attachments/assets/8cd1563d-0faa-40ce-955f-6f953739a0a5)
 
 
+<h2></h2>
 
 
 (Step 2 overview) 
