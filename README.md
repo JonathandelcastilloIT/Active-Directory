@@ -163,23 +163,19 @@ Configure and install Active Directory services on the designated Domain Control
 
 ![image](https://github.com/user-attachments/assets/16c77d30-25ac-4905-8c36-a6b04b9d41e2)
 
+6. Log out / close the connection to DC-1 and log back in as "mydomain.com jane_admin"
+
+- Use jane _admin as your admin account from now on
+
+![image](https://github.com/user-attachments/assets/0c062ab7-29b0-4a14-a4d3-35ddaea00639)
 
 
 
 
+6. Set Client-1’s DNS settings to DC-1’s Private IP address
 
 
-
-
-
-
-
-
-
-5. Set Client-1’s DNS settings to DC-1’s Private IP address
-
-
-*In order for the client-1 to join the domain “mydomain.com”.we need to tell the client-1 to use our domain controller as the DNS server
+*In order for the client-1 to join the domain “mydomain.com”. We need to tell the client-1 to use our domain controller as the DNS server
 
 - In the Azure Portal, select Client-01 -> Networking setting -> Network interface and click on DNS servers
 
@@ -192,10 +188,24 @@ Configure and install Active Directory services on the designated Domain Control
 
 ![image](https://github.com/user-attachments/assets/6a262bb6-d5be-4328-9e50-4d5540ecaa88)
 
+7. Login to Client-1 as the original local admin and join it to the domain (computer will restart)
+
+- right click the start menu -> click system -> click rename this pc advanced
+
+- under the computer name tab click on change
+
+- join it to the domain "mydomain.com
+
+![image](https://github.com/user-attachments/assets/eb9dced2-f7ed-4e7e-a018-bd3ca8f7c184)
 
 
+- Enter the name and password of an account with permission to join the domain.
 
+- use the account mydomain.com\jane_admin
 
+- Once Client-01 has been added, the VM will restart.
+
+![image](https://github.com/user-attachments/assets/23a90fa4-f86d-4725-93ce-e86a869530ea)
 
 
 
