@@ -98,7 +98,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 
 
-5. Client one will connect to DC-1 to ensure connectivity
+6. Client one will connect to DC-1 to ensure connectivity
 
 *To ensure connectivity between the two VM's, we will ping the domain controller from the client. At first the ping will not work correctly. We have to enable ICMPv4 on the firewall on DC-1. Now we can ping DC-1 successfully from Client-1
 
@@ -172,7 +172,7 @@ Configure and install Active Directory services on the designated Domain Control
 
 
 
-6. Set Client-1’s DNS settings to DC-1’s Private IP address
+7. Set Client-1’s DNS settings to DC-1’s Private IP address
 
 
 *In order for the client-1 to join the domain “mydomain.com”. We need to tell the client-1 to use our domain controller as the DNS server
@@ -188,7 +188,7 @@ Configure and install Active Directory services on the designated Domain Control
 
 ![image](https://github.com/user-attachments/assets/6a262bb6-d5be-4328-9e50-4d5540ecaa88)
 
-7. Login to Client-1 as the original local admin and join it to the domain (computer will restart)
+8. Login to Client-1 as the original local admin and join it to the domain (computer will restart)
 
 - right click the start menu -> click system -> click rename this pc advanced
 
@@ -208,11 +208,37 @@ Configure and install Active Directory services on the designated Domain Control
 ![image](https://github.com/user-attachments/assets/23a90fa4-f86d-4725-93ce-e86a869530ea)
 
 
-8. Login to the Domain Controller and verify Client-1 shows up in ADUC
+9. Login to the Domain Controller and verify Client-1 shows up in ADUC
 
 - Expand mydomain.com then go to computers and verify 
 
 ![image](https://github.com/user-attachments/assets/5e8526f3-2184-4cb2-abb8-d58384430be7)
+
+
+10. Create a new OU named “_CLIENTS” and drag Client-1 into there
+
+
+![image](https://github.com/user-attachments/assets/a2b66ee6-7ad6-4ffb-b911-2e9b7f5f76bd)
+
+
+<h2></h2>
+
+
+(Step 3 overview) 
+
+Setting up Remote Desktop for non-administrative users on Client-1 and creating user accounts using a powershell script to populate our domain 
+
+1. 
+
+
+
+
+
+
+
+
+
+
 
 
 
