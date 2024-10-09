@@ -228,13 +228,55 @@ Configure and install Active Directory services on the designated Domain Control
 
 Setting up Remote Desktop for non-administrative users on Client-1 and creating user accounts using a powershell script to populate our domain 
 
-1. 
+1. Setup Remote Desktop for non-administrative users on client - 1
+
+- We have to log into Client-1 as an admin (using mydomain.com\jane_admin) right click the start menu and open system.
+
+- Click on "Remote Desktop" on User Accounts and click “Select users that can remotely access this PC”
+
+- allow "domain users" access to remote desktop.
+
+-  After completing those steps you should be able to log into Client-1 as a normal user.
+
+![image](https://github.com/user-attachments/assets/6fecd11d-7d7f-4724-a05e-075883efbe60)
+
+2.  Run PowerShell script
+
+
+-  use a Powershell script to generate a number of users for our Active Directory Domain.
+
+- Login to DC-01 as mydomain.com\jane_admin
+
+- Open PowerShell_ise as an administrator and create a new file then save 
+
+
+- [(https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)]
+
+
+
+
+- paste a script to generate thousands of users into the domain.
+
+- run script
+
+![image](https://github.com/user-attachments/assets/2d58ce4a-9b87-4f79-b26d-e3a7de058c30)
 
 
 
 
 
 
+
+- When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES)
+
+
+
+
+3.  Login as a user
+
+- Now you can try logging in as one of the users to further verify that the script has worked.
+
+ - Take note of the default password in the script (Password1) for all users 
 
 
 
