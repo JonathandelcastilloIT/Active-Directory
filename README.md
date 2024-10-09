@@ -254,20 +254,17 @@ Setting up Remote Desktop for non-administrative users on Client-1 and creating 
 
 
 
-
-- paste a script to generate thousands of users into the domain.
+- paste the script to generate thousands of users into the domain.
 
 - run script
 
 ![image](https://github.com/user-attachments/assets/2d58ce4a-9b87-4f79-b26d-e3a7de058c30)
 
 
-
-
-
-
-
 - When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES)
+
+![image](https://github.com/user-attachments/assets/37ac0585-6020-4915-9931-3252b20ede7a)
+
 
 
 
@@ -277,6 +274,9 @@ Setting up Remote Desktop for non-administrative users on Client-1 and creating 
 - Now you can try logging in as one of the users to further verify that the script has worked.
 
  - Take note of the default password in the script (Password1) for all users 
+
+![image](https://github.com/user-attachments/assets/e59ddf60-82eb-4833-93e9-75512178596e)
+
 
 
 
