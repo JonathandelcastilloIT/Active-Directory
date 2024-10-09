@@ -275,7 +275,14 @@ Setting up Remote Desktop for non-administrative users on Client-1 and creating 
 
  - Take note of the default password in the script (Password1) for all users 
 
-![image](https://github.com/user-attachments/assets/e59ddf60-82eb-4833-93e9-75512178596e)
+![image](https://github.com/user-attachments/assets/f7ed89f4-794c-437e-9733-ab5d1a46ac1c)
+
+
+- As you can see the Powershell script created a user with the username "bid.tuk" We were able to login to Client-1 with his credentials as a normal user.
+
+
+![image](https://github.com/user-attachments/assets/e1f609d6-a6dc-42ba-ad54-22d6d2d87006)
+
 
 
 
